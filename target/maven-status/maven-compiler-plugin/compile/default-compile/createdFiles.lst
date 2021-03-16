@@ -46,7 +46,6 @@ com\isnakebuzz\meetup\EventsManager\CustomEvents\GameEndEvent.class
 com\isnakebuzz\meetup\Utils\PluginUtils\Metrics$MultiLineChart.class
 com\isnakebuzz\meetup\Configurations\ConfigUtils.class
 com\isnakebuzz\meetup\EventsManager\Events\EventCommand.class
-com\isnakebuzz\meetup\Database\Core\MySQL_v2.class
 com\isnakebuzz\meetup\EventsManager\CustomEvents\GameStartingEvent.class
 com\isnakebuzz\meetup\Utils\WorldUtils\WorldGen.class
 com\isnakebuzz\meetup\Utils\Enums\GameStates.class
@@ -104,7 +103,6 @@ com\isnakebuzz\meetup\Utils\Enums\StartingType.class
 com\isnakebuzz\meetup\EventsManager\Events\EventSpectator.class
 com\isnakebuzz\meetup\Utils\ScoreBoard\ScoreBoardAPI$ScoreboardType.class
 com\isnakebuzz\meetup\Utils\WorldBorder\WorldFillerTaskCompleteEvent.class
-com\isnakebuzz\meetup\Database\Types\VMySQL_v2.class
 com\isnakebuzz\meetup\Utils\Managers\VoteManager.class
 com\isnakebuzz\meetup\Utils\PacketHelper\Reflection.class
 com\isnakebuzz\meetup\EventsManager\Events\EventWorld.class

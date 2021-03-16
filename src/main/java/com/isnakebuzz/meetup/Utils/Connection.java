@@ -21,19 +21,19 @@ public class Connection {
         String user = config.getString("MongoDB.user");
         String pass = config.getString("MongoDB.pass");
         String servers = config.getString("MongoDB.ips");
-        String uri = "mongodb+srv://" + user + ":" + pass + "@" + servers + "/";
+        String uri = "mongodb://" + user + ":" + pass + "@" + servers + "/";
 
         MongoClientURI clientURI = new MongoClientURI(uri);
         mongoClient = new MongoClient(clientURI);
     }
 
     public void loadMySQL() {
-        plugin.getMySQL_v2().connect();
+        //plugin.getMySQL_v2().connect();
     }
 
     public void disconnect() {
         if (Database.database == Database.MYSQL) {
-            plugin.getMySQL_v2().disconnect();
+          //  plugin.getMySQL_v2().disconnect();
         }
     }
 

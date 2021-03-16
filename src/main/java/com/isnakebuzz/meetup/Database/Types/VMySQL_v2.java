@@ -1,4 +1,4 @@
-package com.isnakebuzz.meetup.Database.Types;
+/*package com.isnakebuzz.meetup.Database.Types;
 
 import com.isnakebuzz.meetup.Database.PlayerDataInterface;
 import com.isnakebuzz.meetup.Main;
@@ -189,3 +189,4 @@ public class VMySQL_v2 implements PlayerDataInterface {
     }
 
 }
+*/

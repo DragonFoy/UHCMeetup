@@ -1,7 +1,7 @@
 package com.isnakebuzz.meetup;
 
-import com.isnakebuzz.meetup.Database.Core.MySQL_v2;
-import com.isnakebuzz.meetup.Database.Types.VMySQL_v2;
+//import com.isnakebuzz.meetup.Database.Core.MySQL_v2;
+//import com.isnakebuzz.meetup.Database.Types.VMySQL_v2;
 import com.isnakebuzz.meetup.EventsManager.EventManager;
 import com.isnakebuzz.meetup.EventsManager.VoteEventManager;
 import com.isnakebuzz.meetup.Utils.Enums.GameStates;
@@ -55,12 +55,12 @@ public class Main extends JavaPlugin {
     private VoteEventManager voteEventManager;
     private PluginVersion versionHandler;
     private PlayerDataInterface playerDataInterface;
-    private DependManager dependManager;
-    private MySQL_v2 mySQL_v2;
+    //private DependManager dependManager;
+    //private MySQL_v2 mySQL_v2;
 
     public Main() {
-        this.mySQL_v2 = new MySQL_v2(this);
-        this.dependManager = new DependManager(this);
+      //  this.mySQL_v2 = new MySQL_v2(this);
+        //this.dependManager = new DependManager(this);
         this.voteEventManager = new VoteEventManager(this);
         this.voteManager = new VoteManager(this);
         this.connection = new Connection(this);
@@ -119,11 +119,12 @@ public class Main extends JavaPlugin {
         this.getEventManager().loadListeners();
 
         //Load metrics
-        Metrics metrics = new Metrics(this);
+        @SuppressWarnings("unused")
+		Metrics metrics = new Metrics(this);
 
         //Loading dependencies
         checkDatabase();
-        this.dependManager.loadDepends();
+        //this.dependManager.loadDepends();
 
         //Load Database
         loadDatabase();
@@ -224,9 +225,9 @@ public class Main extends JavaPlugin {
         return playerDataInterface;
     }
 
-    public MySQL_v2 getMySQL_v2() {
+   /* public MySQL_v2 getMySQL_v2() {
         return mySQL_v2;
-    }
+    }*/
 
     public void checkVersionPlayer(Player p) {
         SpigotUpdater spigotUpdater = new SpigotUpdater(this, 47646);
@@ -330,7 +331,7 @@ public class Main extends JavaPlugin {
         } else if (Connection.Database.MYSQL.toString().equalsIgnoreCase(dbType)) {
             this.getConnection().loadMySQL();
             log("Database", "Loading MySQL");
-            playerDataInterface = new VMySQL_v2(this);
+            //playerDataInterface = new VMySQL_v2(this);
         } else if (Connection.Database.NONE.toString().equalsIgnoreCase(dbType)) {
             log("Database", "Has disabled");
         } else {

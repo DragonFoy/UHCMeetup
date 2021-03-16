@@ -1,8 +1,7 @@
-package com.isnakebuzz.meetup.Database.Core;
+/*package com.isnakebuzz.meetup.Database.Core;
 
 import com.isnakebuzz.meetup.Main;
 import com.isnakebuzz.meetup.Utils.Callback;
-import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;
 
@@ -46,7 +45,8 @@ public class MySQL_v2 {
         dataSource.setCheckoutTimeout(checkoutTimeout);
     }
 
-    public void prepareStatement(String sql, Callback<ResultSet> callback) {
+    @SuppressWarnings("deprecation")
+	public void prepareStatement(String sql, Callback<ResultSet> callback) {
         Bukkit.getScheduler().scheduleAsyncDelayedTask(plugin, () -> {
             Connection connection = null;
             PreparedStatement preparedStatement = null;
@@ -70,4 +70,4 @@ public class MySQL_v2 {
     }
 
 
-}
+}*/

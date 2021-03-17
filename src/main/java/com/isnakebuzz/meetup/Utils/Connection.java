@@ -21,7 +21,7 @@ public class Connection {
         String user = config.getString("MongoDB.user");
         String pass = config.getString("MongoDB.pass");
         String servers = config.getString("MongoDB.ips");
-        String uri = "mongodb://" + user + ":" + pass + "@" + servers + "/";
+        String uri = "mongodb+srv:" + user + ":" + pass + "@" + servers + "/";
 
         MongoClientURI clientURI = new MongoClientURI(uri);
         mongoClient = new MongoClient(clientURI);
